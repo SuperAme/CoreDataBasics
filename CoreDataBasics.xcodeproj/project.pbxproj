@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C9400B9276C032C0072628D /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9400B8276C032C0072628D /* MovieDetail.swift */; };
 		9CB827C6276BF84400F08E3E /* CoreDataBasicsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB827C5276BF84400F08E3E /* CoreDataBasicsApp.swift */; };
 		9CB827C8276BF84400F08E3E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB827C7276BF84400F08E3E /* ContentView.swift */; };
 		9CB827CA276BF84600F08E3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CB827C9276BF84600F08E3E /* Assets.xcassets */; };
 		9CB827CD276BF84600F08E3E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CB827CC276BF84600F08E3E /* Preview Assets.xcassets */; };
+		9CB827D5276BF91C00F08E3E /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9CB827D3276BF91C00F08E3E /* CoreDataModel.xcdatamodeld */; };
+		9CB827D8276BFAA500F08E3E /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB827D7276BFAA500F08E3E /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9C9400B8276C032C0072628D /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
 		9CB827C2276BF84400F08E3E /* CoreDataBasics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataBasics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB827C5276BF84400F08E3E /* CoreDataBasicsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataBasicsApp.swift; sourceTree = "<group>"; };
 		9CB827C7276BF84400F08E3E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9CB827C9276BF84600F08E3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CB827CC276BF84600F08E3E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9CB827D4276BF91C00F08E3E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		9CB827D7276BFAA500F08E3E /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +57,13 @@
 		9CB827C4276BF84400F08E3E /* CoreDataBasics */ = {
 			isa = PBXGroup;
 			children = (
+				9CB827D6276BFA6B00F08E3E /* Managers */,
 				9CB827C5276BF84400F08E3E /* CoreDataBasicsApp.swift */,
 				9CB827C7276BF84400F08E3E /* ContentView.swift */,
 				9CB827C9276BF84600F08E3E /* Assets.xcassets */,
 				9CB827CB276BF84600F08E3E /* Preview Content */,
+				9CB827D3276BF91C00F08E3E /* CoreDataModel.xcdatamodeld */,
+				9C9400B8276C032C0072628D /* MovieDetail.swift */,
 			);
 			path = CoreDataBasics;
 			sourceTree = "<group>";
@@ -65,6 +74,14 @@
 				9CB827CC276BF84600F08E3E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9CB827D6276BFA6B00F08E3E /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				9CB827D7276BFAA500F08E3E /* CoreDataManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +156,9 @@
 			files = (
 				9CB827C8276BF84400F08E3E /* ContentView.swift in Sources */,
 				9CB827C6276BF84400F08E3E /* CoreDataBasicsApp.swift in Sources */,
+				9C9400B9276C032C0072628D /* MovieDetail.swift in Sources */,
+				9CB827D8276BFAA500F08E3E /* CoreDataManager.swift in Sources */,
+				9CB827D5276BF91C00F08E3E /* CoreDataModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +359,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9CB827D3276BF91C00F08E3E /* CoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9CB827D4276BF91C00F08E3E /* Model.xcdatamodel */,
+			);
+			currentVersion = 9CB827D4276BF91C00F08E3E /* Model.xcdatamodel */;
+			path = CoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9CB827BA276BF84400F08E3E /* Project object */;
 }
